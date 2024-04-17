@@ -16,3 +16,14 @@ $gradient-bottom-right: linear-gradient(135deg, #bdfffdff, #9ffff5ff, #7cffc4ff,
 $gradient-top-left: linear-gradient(225deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
 $gradient-bottom-left: linear-gradient(315deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
 $gradient-radial: radial-gradient(#bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
+
+@import './styles/normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        line-height: 26px;
+}
