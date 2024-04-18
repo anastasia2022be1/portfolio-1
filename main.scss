@@ -1,21 +1,15 @@
+$brand-color:#17D396;
+$accent-color:#07f7f7;
+$inverse-color:#00d7bb;
+$box-shadow-color:rgba(22, 213, 156, 0.7);
 
-/* SCSS RGB */
-$celeste: rgba(189, 255, 253, 1);
-$ice-blue: rgba(159, 255, 245, 1);
-$aquamarine: rgba(124, 255, 196, 1);
-$keppel: rgba(106, 190, 167, 1);
-$paynes-gray: rgba(94, 105, 115, 1);
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-right: linear-gradient(90deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-bottom: linear-gradient(180deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-left: linear-gradient(270deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-top-right: linear-gradient(45deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-bottom-right: linear-gradient(135deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-top-left: linear-gradient(225deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-bottom-left: linear-gradient(315deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
-$gradient-radial: radial-gradient(#bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
+
+$back-color: #22252c;
+$back-color-secondary: #313741;
+$text-color: #fff;
+$border-color: #02f4b7;
+
 
 // add Normalize style-list
 
@@ -28,6 +22,8 @@ $gradient-radial: radial-gradient(#bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5
 // add Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import './styles/header.scss';
 
 body {
         font-family: 'Open Sans', sans-serif;
