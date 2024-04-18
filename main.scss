@@ -17,7 +17,16 @@ $gradient-top-left: linear-gradient(225deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6a
 $gradient-bottom-left: linear-gradient(315deg, #bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
 $gradient-radial: radial-gradient(#bdfffdff, #9ffff5ff, #7cffc4ff, #6abea7ff, #5e6973ff);
 
+// add Normalize style-list
+
 @import './styles/normalize.scss';
+
+// add Reset style-list
+
+@import './styles/reset.scss';
+
+// add Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
@@ -26,4 +35,14 @@ body {
         font-size: 14px;
         letter-spacing: 0.4px;
         line-height: 26px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1046px;
+    margin: 0 auto;
 }
