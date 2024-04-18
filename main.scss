@@ -1,15 +1,4 @@
-$brand-color:#17D396;
-$accent-color:#07f7f7;
-$inverse-color:#00d7bb;
-$box-shadow-color:rgba(22, 213, 156, 0.7);
-
-
-
-$back-color: #22252c;
-$back-color-secondary: #313741;
-$text-color: #fff;
-$border-color: #02f4b7;
-
+@import './styles/vars.scss';
 
 // add Normalize style-list
 
@@ -34,11 +23,21 @@ body {
 }
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
+    min-height: 320px;
+    overflow-x: hidden;
 }
 
 ._container {
-    max-width: 1046px;
     margin: 0 auto;
+    padding: 0px 15px;
+}
+
+h2 {
+    background: linear-gradient(left, #00f298, #07f7f7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase
 }

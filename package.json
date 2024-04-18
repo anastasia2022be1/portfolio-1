@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/anastasia2022be1/portfolio-1#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "sass": "^1.75.0"
   }
 }

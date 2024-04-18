@@ -438,22 +438,21 @@ h6 {
 }
 .header__container {
   display: flex;
-  min-height: 104px;
+  min-height: 80px;
   align-items: center;
+  justify-content: space-between;
 }
 .header__logo {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
 }
-.header__menu {
-  margin: 0px 0px 0px 130px;
+.header__logo-img {
+  width: 50px;
+  border-radius: 50%;
 }
-
 .social__list {
-  margin: 0px 0px 0px 130px;
-  display: flex;
-  gap: 20px;
+  display: none;
 }
 .social__link {
   display: block;
@@ -470,7 +469,7 @@ h6 {
 }
 
 .menu__list {
-  display: flex;
+  display: none;
 }
 .menu__item:not(:last-child) {
   margin: 0px 8px 0px 0px;
@@ -479,6 +478,14 @@ h6 {
   color: #fff;
   line-height: 171%;
   font-weight: 600;
+}
+.menu__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 body {
@@ -490,13 +497,23 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
+  min-height: 320px;
+  overflow-x: hidden;
 }
 
 ._container {
-  max-width: 1046px;
   margin: 0 auto;
+  padding: 0px 15px;
+}
+
+h2 {
+  background: linear-gradient(left, #00f298, #07f7f7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */
