@@ -429,12 +429,13 @@ h6 {
 }
 
 .header {
+  background: #17D396;
+  background: linear-gradient(to right, #17D396, #07F7F7);
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
-  background-color: #17D396;
 }
 .header__container {
   display: flex;
@@ -442,10 +443,21 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 576px) {
+  .header__container {
+    min-height: 100px;
+  }
+}
 .header__logo {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
+  margin-left: 8px;
+}
+@media (min-width: 576px) {
+  .header__logo {
+    margin-left: 14px;
+  }
 }
 .header__logo-img {
   width: 50px;
@@ -454,9 +466,14 @@ h6 {
 .social__list {
   display: none;
 }
+@media (min-width: 576px) {
+  .social__list {
+    display: flex;
+  }
+}
 .social__link {
   display: block;
-  font-size: 20px;
+  font-size: 26px;
   margin: 0 10px;
 }
 
@@ -471,6 +488,11 @@ h6 {
 .menu__list {
   display: none;
 }
+@media (min-width: 992px) {
+  .menu__list {
+    display: flex;
+  }
+}
 .menu__item:not(:last-child) {
   margin: 0px 8px 0px 0px;
 }
@@ -484,8 +506,34 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 5px;
+  border: none;
   background-color: #fff;
   cursor: pointer;
+  position: relative;
+}
+.menu__btn::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #00d7bb;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  box-shadow: 0 4px 0 0 #00d7bb, 0 8px 0 0 #00d7bb;
+}
+@media (min-width: 992px) {
+  .menu__btn {
+    display: none;
+  }
+}
+
+.hero {
+  background-image: url("../images/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 193px;
 }
 
 body {
@@ -506,6 +554,26 @@ body {
   padding: 0px 15px;
 }
 
+@media (min-width: 576px) {
+  ._container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  ._container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 992px) {
+  ._container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  ._container {
+    max-width: 1320px;
+  }
+}
 h2 {
   background: linear-gradient(left, #00f298, #07f7f7);
   background-clip: text;

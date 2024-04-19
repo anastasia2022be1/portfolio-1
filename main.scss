@@ -14,6 +14,8 @@
 
 @import './styles/header.scss';
 
+@import './styles/hero.scss';
+
 body {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
@@ -30,6 +32,27 @@ body {
 ._container {
     margin: 0 auto;
     padding: 0px 15px;
+}
+
+@media (min-width: 576px) {
+    ._container {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 768px) {
+    ._container {
+            padding: 0 40px;
+        }
+}
+@media (min-width: 992px) {
+    ._container {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1400px) {
+    ._container {
+            max-width: 1320px;
+        }
 }
 
 h2 {

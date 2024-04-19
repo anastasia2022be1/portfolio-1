@@ -1,4 +1,6 @@
 .header {
+    background: $brand-color;
+    background: $linear-gradient-header;
 
     position: fixed;
     width: 100%;
@@ -6,21 +8,29 @@
     top: 0;
     z-index: 50;
 
-    background-color: $brand-color;
-
     &__container {
         display: flex;
         min-height: 80px;
         align-items: center;
         justify-content: space-between;
     }
-
+        @media (min-width: 576px) {
+        &__container {
+            min-height: 100px;
+        }
+        }
     // .header__logo
 
     &__logo {
         font-size: 24px;
         font-weight: 700;
         color: $text-color;
+        margin-left: 8px;
+    }
+    @media (min-width: 576px) {
+        &__logo {
+            margin-left: 14px;
+        }
     }
 
     &__logo-img {
@@ -40,20 +50,20 @@
     // .social__list
     
     &__list {
-
-        display: none;
-        // display: flex;
+        display: none; 
     }
 
-    // .social__item
-
-    &__item {}
+     @media (min-width: 576px) {
+            &__list {
+                display: flex;
+            }
+    }
 
     // .social__link
 
     &__link {
         display: block;
-        font-size: 20px;
+        font-size: 26px;
         margin: 0 10px;
     }
 }
@@ -73,17 +83,16 @@
     // .menu__list
 
     &__list {
-
         display: none;
-        // display: flex;
-        // flex-wrap: wrap;
+    }
+
+        @media (min-width: 992px) {
+            &__list {
+            display: flex;
+        }
     }
 
     // .menu__item
-
-    &__item {
-        
-    }
 
     &__item:not(:last-child) {
             margin: 0px 8px 0px 0px;
@@ -102,7 +111,26 @@
         width: 40px;
         height: 40px;
         border-radius: 5px;
+        border: none;
         background-color: $text-color;
         cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 12px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $inverse-color;
+            position: absolute;
+            top: 15px;
+            left: 14px;
+            box-shadow: 0 4px 0 0 $inverse-color, 0 8px 0 0 $inverse-color;
+        }
     }
+        @media (min-width: 992px) {
+            &__btn {
+                display: none;
+            }
+        }
 }
