@@ -1,15 +1,42 @@
 .hero {
-    background-image: url('../images/bg-hero.jpg');
+border: 2px solid #fd7e14;
+    min-height: 500px;
+
+    background: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_640.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 193px;
+
+    position: relative;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
 }
 
-.hero__block {}
+.hero__wrapper {
+   
+}
+.hero__block {
+    
+}
 
-.hero__title-h1 {}
+.hero__title-h1 {
+    color: #fff;
+    font-size: 80px;
+}
 
-.hero__title-h3 {}
+.hero__title-h3 {
+    color: #fff;
+    font-size: 35px;
+}
 
-.hero__discr {}
+.hero__discr {
+    color: #fff;
+    font-size: 25px;
+}
+
+

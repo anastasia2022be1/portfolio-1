@@ -64,3 +64,19 @@ h2 {
     font-weight: 700;
     text-transform: uppercase
 }
+
+/* https: //codingwithtopchiy.github.io/scrollbar.selectors.github.io/ */
+
+body::-webkit-scrollbar {
+    width: $sb-size;
+}
+
+body::-webkit-scrollbar-track {
+    background: $sb-track-color;
+    border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $sb-thumb-color;
+    border-radius: 1rem;
+}

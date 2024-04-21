@@ -4,8 +4,13 @@ $inverse-color: #00d7bb;
 $box-shadow-color: rgba(22, 213, 156, 0.7);
 
 $linear-gradient-header: linear-gradient(to right, #17D396, #07F7F7);
+$linear-gradient-transtarent:  linear-gradient(rgba(0, 0, 0, 0.5), to top,#17D396,#07F7F7);
 
 $back-color: #22252c;
 $back-color-secondary: #313741;
 $text-color: #fff;
 $border-color: #02f4b7;
+
+$sb-track-color: #222;
+$sb-thumb-color: #17D396;
+$sb-size: 1rem;
