@@ -1,0 +1,51 @@
+.contact {
+    background-color: #22252c;
+        padding-top: 0;
+    // .contact__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+input {
+    display: inline-block;
+    padding: 5px 0px;
+    color: #fff;
+    background: transparent;
+    outline: none;
+}
+
+.input-box {
+    border-bottom: 1px solid $inverse-color;
+    margin-bottom: 20px;
+}
+
+i.fas {
+    width: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input [type="message"] {
+    border: 0;
+}
+
+input[type="button"] {
+    width: 100%;
+    border: 2px solid $inverse-color;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus::placeholder {
+    font-weight: 700;
+}

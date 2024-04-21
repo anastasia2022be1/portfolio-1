@@ -16,6 +16,12 @@
 
 @import './styles/hero.scss';
 
+@import './styles/about.scss';
+
+@import './styles/projects.scss';
+
+@import './styles/contact.scss';
+
 body {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
@@ -55,14 +61,47 @@ body {
         }
 }
 
+.section-padding {
+    padding: 120px 0;
+}
+
+
 h2 {
-    background: linear-gradient(left, #00f298, #07f7f7);
+    background: linear-gradient(to left, #00f298, #07f7f7);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     display: inline-block;
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 700;
     text-transform: uppercase
+}
+
+@media (min-width: 576px) {
+    .h2 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .h2 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .h2 {
+        font-size: 45px;
+    }
+}
+
+.section-title {
+        margin-top: 85px;
+        text-align: center;
+}
+
+@media (min-width: 992px) {
+    .section-title {
+        margin-top: 0;
+    }
 }
 
 /* https: //codingwithtopchiy.github.io/scrollbar.selectors.github.io/ */

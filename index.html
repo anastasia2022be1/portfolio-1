@@ -33,11 +33,11 @@
                 <nav class="header__menu">
                     <button class="menu__btn"></button>
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">About me</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
                         <li class="menu__item"><a class="menu__link" href="">Education</a></li>
                         <li class="menu__item"><a class="menu__link" href="">My skills</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">My projects</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#projects">My projects</a></li>
                         <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
                     </ul>
                 </nav>
@@ -55,11 +55,110 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about section-padding" id="about">
+            <div class="_container">
+                <div class="about__box">
+                    <div class="about__photo">
+                        <img src="./images/photo.jpg" alt="photo">
+                    </div>
+                    <div class="resume-btn">
+                        <a href="./images/resume.jpg" download="lebenslauf_sevastianova-anastasiia.jpg">
+                            Download CV <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <h2 class="section-title about__info-title">ABOUT ME</h2>
+                    <p>Hello! I’m Anastasiia Sevastianova. Web Developer with over 1 year of experience. Experienced
+                        with all stages of the development
+                        cycle for dynamic web projects. Having an in-depth knowledge including advanced HTML5, CSS3,
+                        JavaScript, jQuery, Angular
+                        JS. Strong background in management and leadership.</p>
+                    <h4>NAME: <span>Anastasiia Sevastianova</span></h4>
+                    <h4>DATE OF BIRTH <span>29.03.1990</span></h4>
+                    <h4>NATIONALITY: <span>Ukrainian</span></h4>
+                    <h4>ADDRESS: <span>42579 Heiligenhaus, Wülf Str,4</span></h4>
+                    <h4>PHONE: <span>(491) 000 000 00</span></h4>
+                    <h4>E-MAIL: <span class="about__email">sevastyanova.anastasia1@gmail.com</span></h4>
+                </div>
+            </div>
         </section>
-        <section class="education"></section>
+        <section class="education">
+        </section>
         <section class="skills"></section>
-        <section class="contact"></section>
+        <section id="projects" class="projects _container section-padding">
+            <div class="projects__box">
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-1.jpg" />
+                </div>
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-2.jpg" />
+                </div>
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-3.png" />
+                </div>
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-4.jpg" />
+                </div>
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-5.png" />
+                </div>
+                <div class="project">
+                    <div class="text-wrapper">
+                        <h4>BRANADING DESIGN
+                        </h4>
+                        <p>LOGO DESIGN</p>
+                    </div>
+                    <img src="./images/project-6.png" />
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-padding">
+            <div class="contact__form _container">
+                <h2 class="section-title">Contact me</h2>
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" autocomplete="off" placeholder="Your name...">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-at"></i>
+                    <input type="text" name="email" autocomplete="off" placeholder="Your email...">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-message"></i>
+                    <input type="text" name="message" autocomplete="off" placeholder="Your message..">
+
+                </div>
+
+                <input type="button" value="Send message">
+            </div>
+        </section>
 
         <footer></footer>
     </div>

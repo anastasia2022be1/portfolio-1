@@ -1,42 +1,101 @@
 .hero {
-border: 2px solid #fd7e14;
-    min-height: 500px;
+    min-height: 600px;
 
-    background: linear-gradient(90deg, rgba(23, 211, 150, 0) 0%, rgba(23, 211, 150, 0.5074404761904762) 43%, rgba(7, 247, 247, 0.4598214285714286) 70%, rgba(7, 247, 247, 0.4066001400560224) 87%), url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_640.jpg');
+    background: linear-gradient(90deg, rgba(23, 211, 150, 0) 0%, rgba(23, 211, 150, 0.5074404761904762) 30%, rgba(7, 247, 247, 0.4598214285714286) 60%, rgba(7, 247, 247, 0.4066001400560224) 857%), url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_640.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     position: relative;
 
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    
 }
 
-.hero__wrapper {
-   
-}
 .hero__block {
-    
+    color: $text-color;
+    margin-left: 40px;
+}
+ @media (min-width: 576px) {
+    .hero__block {
+    margin-left: 60px;
+ }
+}
+@media (min-width: 768px) {
+    .hero__block {
+        margin-left: 65px;
+    }
+}
+@media (min-width: 992px) {
+    .hero__block {
+        margin-left: 80px;
+    }
 }
 
 .hero__title-h1 {
-    color: #fff;
     font-size: 80px;
+    font-weight: 300;
 }
 
 .hero__title-h3 {
-    color: #fff;
     font-size: 35px;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: 40px;
 }
 
-.hero__discr {
-    color: #fff;
-    font-size: 25px;
+@media (min-width: 576px) {
+    .hero__title-h3 {
+        font-size: 40px;
+    }
 }
+@media (min-width: 768px) {
+    .hero__title-h3 {
+        font-size: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .hero__title-h3 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 1400px) {
+    .hero__title-h3 {
+        font-size: 70px;
+    }
+}
+
+
+.hero__discr {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+@media (min-width: 576px) {
+    .hero__discr {
+        font-size: 28px;
+        margin-top: 12px;
+    }
+}
+@media (min-width: 768px) {
+    .hero__discr {
+        font-size: 32px;
+        margin-top: 32px;
+    }
+}
+@media (min-width: 992px) {
+    .hero__discr {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .hero__discr {
+        font-size: 46px;
+        margin-top: 46px;
+    }
+}
+
 
 
