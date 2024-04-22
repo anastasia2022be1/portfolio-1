@@ -9,6 +9,11 @@ background-size: cover;
 padding: 100px 0 75px;
 position: relative;
 z-index: 1;
+
+display: flex;
+align-items: center;
+flex-direction: column;
+
 }
 
 .projects::after {
