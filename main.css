@@ -738,7 +738,7 @@ h4 span {
   z-index: 1;
 }
 
-.project::after {
+.projects::after {
   background: rgba(0, 255, 197, 0.7);
   position: absolute;
   content: "";
