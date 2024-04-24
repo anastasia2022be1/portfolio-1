@@ -1446,6 +1446,38 @@ h4 span {
   text-transform: lowercase;
 }
 
+.btn-back {
+  bottom: 25px;
+  display: block;
+  position: fixed;
+  right: 25px;
+  z-index: 999;
+}
+
+.btn-back a {
+  background: linear-gradient(#17D396, #07F7F7);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 45px;
+  transition: 0.4s;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-back a:hover {
+  background: linear-gradient(#07F7F7, #17D396);
+  transition: 0.4s;
+}
+
+.btn-back a i {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 6px 15px;
+}
+
 /* https: //codingwithtopchiy.github.io/scrollbar.selectors.github.io/ */
 body::-webkit-scrollbar {
   width: 0.7rem;
