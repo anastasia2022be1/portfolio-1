@@ -23,6 +23,7 @@
             min-height: 100px;
         }
         }
+
     // .header__logo
 
     &__logo {
@@ -42,15 +43,20 @@
         border-radius: 50%;
     }
 
-    // .header__menu
-
-    &__menu {
-     
-    }
 }
 
 .header:hover {
     background: $linear-gradient-header;
+}
+
+.fixtopmenu {
+    background: -webkit-gradient(linear, left top, right top, from(#17D396), to(#07F7F7));
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.27);
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.27);
+    padding: 20px 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .social {

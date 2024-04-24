@@ -46,10 +46,16 @@
   bottom: 0;
   content: "";
   height: 20px;
-  left: 50%;
+  left: 20px;
   margin-left: -10px;
   position: absolute;
   width: 20px;
+}
+
+@media (min-width:992px) {
+  .cd-timeline::after {
+      left: 50%;
+    }
 }
 
 .cd-timeline-block {

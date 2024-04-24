@@ -467,8 +467,19 @@ h6 {
   width: 50px;
   border-radius: 50%;
 }
+
 .header:hover {
   background: linear-gradient(to right, #17D396, #07F7F7);
+}
+
+.fixtopmenu {
+  background: -webkit-gradient(linear, left top, right top, from(#17D396), to(#07F7F7));
+  background: linear-gradient(to right, #17D396, #07F7F7);
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.27);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.27);
+  padding: 20px 0;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .social__list {
@@ -846,9 +857,13 @@ input {
   margin-bottom: 20px;
 }
 
-i.fas {
+i.fas,
+i.fa-message {
   width: 20px;
   text-align: center;
+  font-family: "fontawesome";
+  font-size: 20px;
+  color: #07f7f7;
 }
 
 input[type=text],
@@ -858,11 +873,17 @@ input [type=message] {
 }
 
 input[type=button] {
-  width: 100%;
+  width: 50%;
   border: 2px solid #00d7bb;
   border-radius: 4px;
-  margin-top: 15px;
+  margin: 15px auto;
   cursor: pointer;
+  padding: 15px;
+}
+
+input[type=button]:hover {
+  background-color: #07f7f7;
+  color: #000;
 }
 
 input::placeholder {
@@ -921,12 +942,17 @@ input:focus::placeholder {
   bottom: 0;
   content: "";
   height: 20px;
-  left: 50%;
+  left: 20px;
   margin-left: -10px;
   position: absolute;
   width: 20px;
 }
 
+@media (min-width: 992px) {
+  .cd-timeline::after {
+    left: 50%;
+  }
+}
 .cd-timeline-block {
   margin: 0 0 150px;
 }
@@ -1205,6 +1231,43 @@ input:focus::placeholder {
     text-align: right;
   }
 }
+.footer {
+  background-color: #22252c;
+}
+
+.footer-icons {
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.footer-icons li {
+  display: inline;
+}
+
+.footer-icons li a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-icons li a i {
+  background-color: #313741;
+  border-radius: 50%;
+  color: #02cfb4;
+  display: table-cell;
+  font-size: 22px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.footer-icons li a i:hover {
+  background-color: #02cfb4;
+  color: #22252c;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -1245,6 +1308,10 @@ body {
 }
 .section-padding {
   padding: 120px 0;
+}
+
+.section-padding:last-child {
+  padding: 60px 0;
 }
 
 .section-title {
