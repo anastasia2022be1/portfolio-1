@@ -1274,6 +1274,15 @@ input:focus::placeholder {
   padding: 80px 0;
 }
 
+@media (min-width: 768px) {
+  .skillbar__container {
+    display: flex;
+  }
+}
+.skillbar {
+  width: 100%;
+}
+
 .skill-title {
   color: #fff;
   font-size: 16px;
@@ -1288,6 +1297,7 @@ input:focus::placeholder {
   height: 10px;
   background: linear-gradient(to right, #17D396, #07F7F7);
   border-radius: 5px;
+  animation-fill-mode: forwards;
 }
 
 .skill-html {
@@ -1324,6 +1334,42 @@ input:focus::placeholder {
   }
   100% {
     width: 60%;
+  }
+}
+.skill-js {
+  animation-name: js;
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.skill-angular {
+  animation-name: angular;
+}
+
+@keyframes angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.skill-react {
+  animation-name: react;
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
   }
 }
 body {
