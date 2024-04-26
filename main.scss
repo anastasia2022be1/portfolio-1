@@ -84,9 +84,9 @@ body {
 }
 
 .section-title h2 {
-    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: $linear-gradient-left;
+    background-clip: text;
+    color: transparent;
     display: inline-block;
     font-size: 32px;
     font-weight: 700;
@@ -126,7 +126,7 @@ body {
 }
 
 .btn-back a {
-    background: linear-gradient(#17D396, #07F7F7);
+    background: $linear-gradient-btn;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -139,7 +139,7 @@ body {
 }
 
 .btn-back a:hover {
-    background: linear-gradient(#07F7F7, #17D396);
+    background: $linear-gradient-btn-hover;
     transition: 0.4s;
 }
 

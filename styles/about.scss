@@ -1,5 +1,5 @@
 .about {
-        background-color: #22252c;
+        background-color: $back-color;
 }
 
 .about ._container {
@@ -35,7 +35,7 @@
             content: "";
             display: block;
             height: 100%;
-            border: 7px solid #00d7bb;
+            border: 7px solid $inverse-color;
             left: 50px;
             position: absolute;
             top: -45px;
@@ -52,8 +52,8 @@
 }
 
 .resume-btn a {
-    background: linear-gradient(to right, #17d396, #07f7f7);
-    box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+    background: $linear-gradient-header;
+    box-shadow: 0 0 20px $box-shadow-color;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -84,7 +84,7 @@
 }
 
 h4 {
-            color: #00d7bb;
+            color: $inverse-color;
             font-weight: 700;
             text-transform: uppercase;
             font-size: 17.5px;
@@ -99,5 +99,5 @@ h4 span {
 }
 
 .about__email {
-text-transform: lowercase;
+    text-transform: lowercase;
 }

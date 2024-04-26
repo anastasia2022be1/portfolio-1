@@ -1,5 +1,5 @@
 .contact {
-    background-color: #22252c;
+    background-color: $back-color;
         padding-top: 0;
     // .contact__form
 
@@ -53,7 +53,7 @@ input[type="button"]:hover {
 }
 
 input::placeholder {
-    color: white;
+    color: #fff;
 }
 
 input:focus::placeholder {

@@ -1,5 +1,5 @@
 .footer {
-        background-color: #22252c;
+        background-color: $back-color;
 }
 
 .footer-icons {
@@ -17,9 +17,9 @@
 }
 
 .footer-icons li a i {
-    background-color: #313741;
+    background-color: $back-color-secondary;
     border-radius: 50%;
-    color: #02cfb4;
+    color: $border-color;
     display: table-cell;
     font-size: 22px;
     height: 50px;
@@ -30,6 +30,6 @@
 }
 
 .footer-icons li a i:hover {
-    background-color: #02cfb4;
-    color: #22252c;
+    background-color: $inverse-color;
+    color: $back-color;
 }

@@ -17,7 +17,7 @@ flex-direction: column;
 }
 
 .projects::after {
-    background: rgba(0, 255, 197, 0.7);
+    background: $background-visibility;
     position: absolute;
     content: "";
     width: 100%;
