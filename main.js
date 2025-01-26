@@ -30,24 +30,34 @@ menuLinks.forEach(link => {
 });
 
 
+// -----------------------------------------------------
 
+const form = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const sendButton = document.getElementById('sendMessage');
 
-// const contactForm = document.querySelector('.contact__form');
-// const emailInput = document.querySelector('input[name="email"]');
-// const nameInput = document.querySelector('input[name="name"]');
-// const messageInput = document.querySelector('input[name="message"]');
+sendButton.addEventListener('click', function () {
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const message = messageInput.value;
 
-// contactForm.addEventListener('submit', (e) => {
-//     e.preventDefault(); // Останавливает стандартную отправку формы
+    if (!name || !email || !message) {
+        alert('Please fill out all fields!');
+        return;
+    }
 
-//     if (!emailInput.value.includes('@')) {
-//         alert('Введите корректный email');
-//     } else if (nameInput.value.trim() === '') {
-//         alert('Имя не должно быть пустым');
-//     } else if (messageInput.value.trim() === '') {
-//         alert('Введите сообщение');
-//     } else {
-//         alert('Форма успешно отправлена!');
-//         contactForm.reset(); // Очистка формы
-//     }
-// });
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    alert('Form submitted successfully!');
+
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+});
+

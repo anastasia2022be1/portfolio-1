@@ -717,12 +717,16 @@ h4 span {
     flex-direction: column;
     flex-wrap: wrap; }
 
-input {
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="button"] {
   display: inline-block;
-  padding: 5px 0px;
+  padding: 5px 0;
   color: #fff;
   background: transparent;
-  outline: none; }
+  outline: none;
+  border: 0; }
 
 .input-box {
   border-bottom: 1px solid #00d7bb;
@@ -732,14 +736,8 @@ i.fas,
 i.fa-message {
   width: 20px;
   text-align: center;
-  font-family: 'fontawesome';
   font-size: 20px;
   color: #07f7f7; }
-
-input[type="text"],
-input[type="password"],
-input [type="message"] {
-  border: 0; }
 
 input[type="button"] {
   width: 50%;
@@ -759,6 +757,9 @@ input::placeholder {
 input:focus::placeholder {
   font-weight: 700; }
 
+@media (max-width: 768px) {
+  input[type="button"] {
+    width: 100%; } }
 .education {
   background-color: #313741;
   color: #fff; }

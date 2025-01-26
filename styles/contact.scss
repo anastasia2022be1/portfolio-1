@@ -1,7 +1,6 @@
 .contact {
     background-color: $back-color;
-        padding-top: 0;
-    // .contact__form
+    padding-top: 0;
 
     &__form {
         display: flex;
@@ -10,12 +9,16 @@
     }
 }
 
-input {
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="button"] {
     display: inline-block;
-    padding: 5px 0px;
+    padding: 5px 0;
     color: #fff;
     background: transparent;
     outline: none;
+    border: 0;
 }
 
 .input-box {
@@ -27,15 +30,8 @@ i.fas,
 i.fa-message {
     width: 20px;
     text-align: center;
-    font-family: 'fontawesome';
     font-size: 20px;
     color: $accent-color;
-}
-
-input[type="text"],
-input[type="password"],
-input [type="message"] {
-    border: 0;
 }
 
 input[type="button"] {
@@ -58,4 +54,10 @@ input::placeholder {
 
 input:focus::placeholder {
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    input[type="button"] {
+        width: 100%;
+    }
 }
