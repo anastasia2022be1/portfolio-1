@@ -1,7 +1,7 @@
 .skills {
     background-color: #22252c;
-    padding-bottom: 100px;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .skills-aria {
@@ -9,111 +9,68 @@
     padding: 80px 0;
 }
 
-@media (min-width:768px) {
-.skillbar__container {
-        display: flex;
-    }
+.section-title h2 {
+    color: $text-color;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.skillbar {
-    width: 100%;
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $text-color;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover i {
+    transform: scale(1.2);
 }
 
 .skill-title {
-    color: #fff;
     font-size: 16px;
+    font-weight: 600;
 }
 
-.skill {
-    margin: 10px auto;
-}
-
-// Animation
-
-.skill-bar {
-    animation-duration: 4000ms;
-    height: 10px;
-    background: $linear-gradient-header;
-    border-radius: 5px;
-    animation-fill-mode: forwards;
-}
-
-.skill-html {
-    animation-name: skill-html;
-}
-
-@keyframes skill-html {
-    0% {
-        width: 0%
+@media (min-width: 768px) {
+    .skill-item {
+        width: 150px;
     }
 
-    100% {
-        width: 90%
+    .skill-item i {
+        font-size: 80px;
+    }
+
+    .skill-title {
+        font-size: 14px;
     }
 }
 
-.skill-css {
-    animation-name: css;
-}
-
-@keyframes css {
-        0% {
-            width: 0%;
-    }
-        100% {
-            width: 75% ;
-    }
-}
-
-.skill-sass {
-    animation-name: sass;
-}
-
-@keyframes sass {
-    0% {
-        width: 0%;
+@media (min-width: 992px) {
+    .skill-item {
+        width: 180px;
     }
 
-    100% {
-        width: 60%;
-    }
-}
-
-.skill-js {
-    animation-name: js;
-}
-
-@keyframes js {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-.skill-angular {
-    animation-name: angular;
-}
-@keyframes angular {
-    0% {
-        width: 0%;
-    }
-        100% {
-            width: 60%;
-        }
-}
-
-.skill-react {
-    animation-name: react;
-}
-
-@keyframes react {
-    0% {
-        width: 0%;
+    .skill-item i {
+        font-size: 90px;
     }
 
-    100% {
-        width: 45%;
+    .skill-title {
+        font-size: 18px;
     }
 }

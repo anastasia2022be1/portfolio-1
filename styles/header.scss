@@ -1,146 +1,153 @@
 .header {
-    background: $brand-color;
-    background: $linear-gradient-header-fon;
+  background: $brand-color;
+  background: $linear-gradient-header-fon;
 
-    box-shadow: $box-shadow-box;
-    padding: 20px 0;
-    transition: all 0.4s ease 0s;
+  box-shadow: $box-shadow-box;
+  // padding: 20px 0;
+  transition: all 0.4s ease 0s;
 
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 50;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 
+  &__container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width: 576px) {
     &__container {
-        display: flex;
-        min-height: 80px;
-        align-items: center;
-        justify-content: space-between;
+      min-height: 100px;
     }
-        @media (min-width: 576px) {
-        &__container {
-            min-height: 100px;
-        }
-        }
+  }
 
-    // .header__logo
+  // .header__logo
 
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-color;
+    margin-left: 8px;
+  }
+  @media (min-width: 576px) {
     &__logo {
-        font-size: 24px;
-        font-weight: 700;
-        color: $text-color;
-        margin-left: 8px;
+      margin-left: 14px;
     }
-    @media (min-width: 576px) {
-        &__logo {
-            margin-left: 14px;
-        }
-    }
+  }
 
-    &__logo-img {
-        width: 50px;
-        border-radius: 50%;
-    }
-
+  &__logo-img {
+    width: 50px;
+    border-radius: 50%;
+  }
 }
 
 .header:hover {
-    background: $linear-gradient-header;
+  background: $linear-gradient-header;
 }
 
 .social {
-   
-    // .social__list
-    
+  // .social__list
+
+  &__list {
+    display: none;
+  }
+
+  @media (min-width: 576px) {
     &__list {
-        display: none; 
+      display: flex;
     }
+  }
 
-     @media (min-width: 576px) {
-            &__list {
-                display: flex;
-            }
-    }
+  // .social__link
 
-    // .social__link
-
-    &__link {
-        display: block;
-        font-size: 26px;
-        margin: 0 10px;
-    }
+  &__link {
+    display: block;
+    font-size: 26px;
+    margin: 0 10px;
+  }
 }
 
-.fa-brands {}
-
 .fa-linkedin,
-.fa-github,
-.fa-discord,
-.fa-slack,
-.fa-stack-overflow {
-    color: $text-color;
+.fa-github {
+  color: $text-color;
 }
 
 .menu {
+  // .menu__list
 
-    // .menu__list
+  &__list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
+    &.active {
+      display: block;
+    }
+  }
+
+  @media (min-width: 992px) {
     &__list {
-        display: none;
+      display: flex;
     }
+  }
 
-        @media (min-width: 992px) {
-            &__list {
-            display: flex;
-        }
-    }
+  // .menu__item
 
-    // .menu__item
+  &__item:not(:last-child) {
+    margin: 0px 8px 0px 0px;
+  }
 
-    &__item:not(:last-child) {
-            margin: 0px 8px 0px 0px;
-        }
+  // .menu__link
 
-    // .menu__link
+  &__link {
+    color: $text-color;
+    line-height: 171%;
+    font-weight: 600;
+  }
 
+  @media (min-width: 1200px) {
     &__link {
-        color: $text-color;
-        line-height: 171%;
-        font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  // .menu__btn
+
+  &__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: $text-color;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &.active {
+      transform: rotate(90deg);
+      display: none;
     }
 
-    @media (min-width:1200px) {
-        &__link {
-            font-size: 16px;
-        }
+    &::after {
+      content: "";
+      width: 12px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $inverse-color;
+      position: absolute;
+      top: 15px;
+      left: 14px;
+      box-shadow: 0 4px 0 0 $inverse-color, 0 8px 0 0 $inverse-color;
     }
-
+  }
+  @media (min-width: 992px) {
     &__btn {
-        display: block;
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        border: none;
-        background-color: $text-color;
-        cursor: pointer;
-        position: relative;
-
-        &::after {
-            content: "";
-            width: 12px;
-            height: 2px;
-            border-radius: 1px;
-            background-color: $inverse-color;
-            position: absolute;
-            top: 15px;
-            left: 14px;
-            box-shadow: 0 4px 0 0 $inverse-color, 0 8px 0 0 $inverse-color;
-        }
+      display: none;
     }
-        @media (min-width: 992px) {
-            &__btn {
-                display: none;
-            }
-        }
+  }
 }

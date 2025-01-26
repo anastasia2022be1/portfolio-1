@@ -84,7 +84,9 @@ body {
 }
 
 .section-title h2 {
-    background: $linear-gradient-left;
+    background-image: linear-gradient(to right, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     display: inline-block;
